@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Zen+Loop&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-template {
+	grid-template:
+		"logo nav nav"
+		"sidenav content advert"
+		"footer footer footer"
+		/ 1fr 3fr 1fr;
+}
+
+.gap {
+	background-color: #978e94;
+	color: black;
+	gap: 20px;
+}
+
+/*.column-gap {
+	gap: 2px;
+	column-gap: 20px;
+}
+
+.row-gap {
+	gap: 2px;
+	row-gap: 20px;
+}*/
+
+.margin {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.nav {
+	grid-area: nav;
+	align-items: center;
+}
+
+div.search{
+	padding: 10px;
+	float: right;
+}
+
+.content {
+	grid-area: content;
+}
+
+
+img{
+	margin: 15px;
+	border-radius: 5px;
+}
+
+.sidenav {
+	grid-area: sidenav;
+}
+
+
+.advert {
+	grid-area: advert;
+}
+
+#jare{
+	padding: 20px;
+	height: 200px;
+}
+
+#falcaowinter{
+	padding: 20px;
+	height: 150px;
+}
+
+#wanda{
+	padding: 20px;
+	height: 250px;
+	width: 400px;
+}
+
+th>img{
+	height: 300px;
+	width: 300px;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+div>a{
+	margin: 10px;
+	float: left;
+}
+
+
+#Contrato{
+	padding: 30px;
+}
+
+/* Grid Item */
+.item {
+	background: #c9bec3	;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+li{
+	list-style: none;
+}
+
+.outros{
+	padding: 15px;
+	height: 150px;
+	width: 150px;
+}
+
+.grid {
+	max-width: 100%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-weight: normal;
+}
+
+h2{
+	padding: 10px;
+		font-family: 'Merriweather', serif;
+}
+
+h2.nome{
+	font-family: 'Zen Loop', cursive;
+}
+
+h3{
+	font-family: 'Merriweather', serif;
+	padding:20px;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+	padding-bottom: 60px;
+	margin: 0px;
+}
+
+body > div {
+	padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+	background: rgba(0,0,0,.03);
+}
+
+body > div > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
